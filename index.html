@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AI Risk Repository</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/2.1.4/css/dataTables.bootstrap5.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/searchpanes/2.3.2/css/searchPanes.bootstrap5.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/2.0.5/css/select.bootstrap5.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/3.1.1/css/buttons.bootstrap5.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/2.1.4/js/dataTables.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/2.1.4/js/dataTables.bootstrap5.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/searchpanes/2.3.2/js/dataTables.searchPanes.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/searchpanes/2.3.2/js/searchPanes.bootstrap5.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/select/2.0.5/js/dataTables.select.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/select/2.0.5/js/select.bootstrap5.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/3.1.1/js/dataTables.buttons.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/3.1.1/js/buttons.bootstrap5.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/buttons/3.1.1/js/buttons.colVis.min.js"></script>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container-fluid mt-5">
+			<h1 class="text-center mb-4">AI Risk Repository</h1>
+			<div class="explanation mb-4" hidden>
+				<h2>Field Explanations</h2>
+				<p><strong>AI Risk database:</strong> Contains the extracted information from papers.</p>
+				<p><strong>Causal Taxonomy:</strong> Classifies risks based on their causal factors.</p>
+				<p><strong>Domain Taxonomy:</strong> Classifies risks into specific AI risk domains and sub-domains.</p>
+				<h3>Key Fields:</h3>
+				<ul>
+					<li><strong>Category level:</strong> Paper, risk, subcategory of risk, or additional evidence</li>
+					<li><strong>Risk category & subcategory:</strong> Extracted text for risk categories and subcategories</li>
+					<li><strong>Description:</strong> Description of risk or risk category</li>
+					<li><strong>Entity:</strong> Whether the risk is due to AI system, Human, or other</li>
+					<li><strong>Intent:</strong> Whether the risk is due to expected or unexpected outcomes</li>
+					<li><strong>Timing:</strong> Whether the risk occurs pre- or post-deployment</li>
+					<li><strong>Domain:</strong> One of 7 AI risk domains</li>
+					<li><strong>Sub-domain:</strong> One of 23 AI risk sub-domains</li>
+				</ul>
+			</div>
+			<div class="table-responsive">
+				<table id="data-table" class="table table-striped" style="width: 100%">
+					<thead id="table-header" class="sticky-top"></thead>
+					<tbody id="table-body"></tbody>
+				</table>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+.explanation {
+	background-color: #e7f3fe;
+	border-left: 6px solid #2196f3;
+	padding: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+tr.expanded {
+	background-color: black;
+}
+
+td {
+	white-space: normal;
+	word-wrap: break-word;
+	max-width: 200px;
+}
+
+.table-responsive {
+	height: calc(100vh - 200px); /* Adjust this value as needed */
+	overflow-y: auto;
+}
+
+.sticky-top {
+	position: sticky;
+	top: 0;
+	z-index: 1020;
+	background-color: #fff; /* Adjust this to match your design */
+}
+
+#table-header th {
+	background-color: #f8f9fa; /* Light gray background, adjust as needed */
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Add some padding to the top of the body for better appearance */
+body {
+	padding-top: 20px;
+}
+
+/* Style for the child row content */
+.child-row-content {
+	padding: 10px;
+	background-color: #3a3a3a;
+}
+
+.child-row-content dt {
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.child-row-content dd {
+	margin-left: 20px;
+}
+
+.pill {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 12px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+}
+.pill[style*="background-color: white"] {
+	border: 1px solid #ccc;
+}
