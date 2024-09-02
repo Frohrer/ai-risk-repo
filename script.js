@@ -90,7 +90,19 @@ function processData(data) {
 }
 
 function formatChildRow(d) {
-	return "<dl>" + "<dt>Description:</dt>" + "<dd>" + (d[10] || "N/A") + "</dd>" + "<dt>Additional Evidence:</dt>" + "<dd>" + (d[11] || "N/A") + "</dd>" + "<dt>Source:</dt>" + "<dd>" + (d[0] || "N/A") + "</dd>" + "</dl>";
+	console.log(d);
+	return `
+        <dl>
+            <dt>Description:</dt>
+            <dd>${d[10] || "N/A"}</dd>
+			<dt>Technical Control:</dt>
+            <dd>${d[19] || "N/A"}</dd>
+            <dt>Additional Evidence:</dt>
+            <dd>${d[11] || "N/A"}</dd>
+            <dt>Source:</dt>
+            <dd>${d[0] || "N/A"}</dd>
+        </dl>
+    `;
 }
 
 function getColorForValue(value) {

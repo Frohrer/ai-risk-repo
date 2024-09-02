@@ -1,0 +1,4 @@
+.env
+output.csv
+input.csv
+technical_control.py
